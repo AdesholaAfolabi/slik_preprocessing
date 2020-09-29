@@ -61,9 +61,7 @@ class Clean(Read_file):
             #identify outliers
             outliers = [x for x in self.data[column] if x < lower or x > upper]
             
-            derived_columns = ['investment_score', 'ctr_score', 'interactions_sms', 
-                               'interactions_click', 'interaction_conversion', 
-                               'loan_propensity']
+            derived_columns = ['derived_columns']
             if column in derived_columns:
                 pass
             else:
