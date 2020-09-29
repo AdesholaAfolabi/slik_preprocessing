@@ -43,7 +43,7 @@ class Clean(Read_file):
         This function takes in the numerical data and removes outliers
         
         '''
-        self.identify_columns()
+        self.identify_cat()
         
         for column in self.num_attributes:
             
