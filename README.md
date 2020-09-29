@@ -5,12 +5,12 @@ This README documents the steps that are necessary to get the slik package up an
 
 ### What is this repository for? ###
 
-* Quick summary: The application employs the modular style of putting the applications together. In total, there are four modules which takes care of reading any type of file, data preprocessing (Nan, outliers, etc), and other preprocessing steps such as One Hot Encoding, Scaling, Normalization, PCA, etc. There is a general module (which is the general_utils module) that contains a list of global attributes and data used throughout the project. The order in which the modules were buildt is highlighted below:
+* Quick summary: The application employs the modular style of putting the applications together. In total, there are four modules which takes care of reading any type of file, data preprocessing (Nan, outliers, etc), and other preprocessing steps such as One Hot Encoding, Scaling, Normalization, PCA, etc. There is a general module (which is the general_utils module) that contains a list of global attributes and data used throughout the project. The order in which the modules were built is highlighted below:
 
-- general_utils: this is where the file is read. Handles reading of CVS, Excel and parquet files with input columns specified. All that is required here is a file path
+- general_utils: this is where the file is read. Handles reading of CVS, Excel and parquet files with input columns specified. All that is required here is a file path.
 - preprocessing: this inherits the attributes of the general_utils and takes it a step further by automatically identifying the type of columns, handling NaN values and outliers
-- pipeline: this module handles building a data pipeline with several considerations. For a start, you can either choose to scale or do normalization. This will be extended to other custom pipeline
-- save_object: here is where the pipeline object is saved as a sparse matrix and can be fed into any machine learning model
+- pipeline: this module handles building a data pipeline with several considerations. For a start, you can either choose to scale or do normalization. This will be extended to other custom pipeline in future releases.
+- save_object: here is where the pipeline object is saved as a sparse matrix and can be fed into any machine learning model.
 
 * Version: 1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
